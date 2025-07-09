@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # 🎬 Subtitle Dictionary Snipper
 
 A real-time, hotkey-triggered subtitle dictionary tool for Windows — made for movie lovers and language learners.  
@@ -77,6 +79,7 @@ A popup will appear showing the definition of the word!
 ```bash
 subtitle-dictionary-snipper/
 │
+├── LICENSE                 # This is the license file
 ├── selector_step1.py       # RegionSelector (drag-to-select tool)
 ├── ocr_snip_tool.py        # Main app script (hotkey + OCR + popup)
 ├── requirements.txt        # Python dependencies
