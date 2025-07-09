@@ -19,18 +19,11 @@ Select a subtitle word on-screen while watching a movie, and instantly get its m
 ## 🛠️ Built With
 
 - **Python**
-- [`pytesseract`](https://pypi.org/project/pytesseract/) – OCR engine wrapper
-- [`pyautogui`](https://pypi.org/project/pyautogui/) – screen capture
-- [`tkinter`](https://docs.python.org/3/library/tkinter.html) – GUI for selection & popup
-- [`keyboard`](https://pypi.org/project/keyboard/) – global hotkey binding
-- [`requests`](https://pypi.org/project/requests/) – HTTP requests to fetch definitions
-
----
-
-## 📸 Demo
-
-![demo](demo.gif)  
-> (You can add a demo GIF or image here to show the drag-and-define in action!)
+- `pytesseract` – OCR engine wrapper
+- `pyautogui` – screen capture
+- `tkinter` – GUI for selection & popup
+- `keyboard` – global hotkey binding
+- `requests` – HTTP requests to fetch definitions
 
 ---
 
@@ -41,3 +34,96 @@ Select a subtitle word on-screen while watching a movie, and instantly get its m
 ```bash
 git clone https://github.com/yourusername/subtitle-dictionary-snipper.git
 cd subtitle-dictionary-snipper
+```
+### 2. Set Up Virtual Environment (Optional but Recommended)
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+### 3. Install Python Requirements
+```bash
+pip install -r requirements.txt
+```
+### 4. Install Tesseract OCR
+Download from: https://github.com/UB-Mannheim/tesseract/wiki
+
+Install to the default path:
+
+```text
+C:\Program Files\Tesseract-OCR\tesseract.exe
+```
+✅ Make sure the .exe path is correctly set inside ocr_snip_tool.py.
+
+---
+
+## ✅ How to Use
+Run the script:
+
+```bash
+python ocr_snip_tool.py
+```
+While watching a movie or any video with subtitles, press:
+
+```mathematica
+Ctrl + Alt + D
+```
+Drag to select a subtitle word on your screen
+
+A popup will appear showing the definition of the word!
+
+---
+
+## 📁 Project Structure
+```bash
+subtitle-dictionary-snipper/
+│
+├── selector_step1.py       # RegionSelector (drag-to-select tool)
+├── ocr_snip_tool.py        # Main app script (hotkey + OCR + popup)
+├── requirements.txt        # Python dependencies
+└── README.md               # This file
+```
+
+---
+
+## 📦 Requirements
+Listed in requirements.txt:
+
+```text
+Copy code
+pytesseract
+pillow
+pyautogui
+keyboard
+requests
+```
+
+---
+
+## 🧠 Future Ideas
+- 🔊 Add pronunciation using Text-to-Speech
+
+- 🌐 Translate to Hindi or other languages
+
+- 📓 Save learned words to a local file (personal vocab list)
+
+- 🪟 Run in background as tray app
+
+- 🧪 Fuzzy matching for unclear OCR results
+
+---
+
+## 🙋‍♂️ Author
+Made with ❤️ by Raunak Sharma.
+
+> “Because sometimes the best way to learn English... is through subtitles.” 🎥
+
+---
+
+## 🪪 License
+This project is licensed under the MIT License — use it freely, modify it proudly.
+
+---
+
+## ⭐️ Star This Repo
+If you found this useful, feel free to give it a ⭐️ on GitHub — it helps more devs find it!
+---
